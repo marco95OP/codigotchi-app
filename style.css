@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General rules */
+html {
+    background: linear-gradient(#838ef9, #3535ec);
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+h3{
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 12px;
+}
+
+main{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    border: none;
+    background-color: #f71568;
+    padding: 10px 16px;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Logo */
+header img{
+    width: 56px;
+}
+
+/* Device image */
+.codigotchi{
+    width: 230px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* duck screen */
+.codigotchi-screen{
+    position: absolute;
+    top: 120px;
+    left: 62px;
+    width: 112px;
+    height: 112px;
+    background-image: url('./images/static.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.codigotchi-screen_sleep{
+    background-image: url('./images/sleep.gif');
+}
+
+.codigotchi-screen_dance{
+    background-image: url('./images/dance.gif');
+}
+
+.codigotchi-screen_eat{
+    background-image: url('./images/eat.gif');
+}
+
+.commands ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 269px;
+}
+
+.commands ul li{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.panels{
+    position: relative;
+    margin-top: 20px;
+}
+
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.panel-microphone{
+}
+
+.panel-commands{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 165px;
+}
+
+.listening .panel-microphone{
+    display: none;
+}
+
+.listening .panel-commands{
+    display: block;
+}
