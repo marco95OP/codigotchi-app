@@ -106,6 +106,7 @@ header img{
     background-color: white;
     border-radius: 10px;
     padding: 18px;
+    transition: transform 0.2s;
 }
 
 .panel-microphone{
@@ -115,14 +116,21 @@ header img{
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    /* to apply css transition I'll use visibility property */
+    visibility: hidden;
+    transform: scale(0);
+    /* display: none; */
     height: 165px;
 }
 
 .listening .panel-microphone{
-    display: none;
+    visibility: hidden;
+    transform: scale(0);
+    /* display: none; */
 }
 
 .listening .panel-commands{
-    display: block;
+    visibility: visible;
+    transform: scale(1);
+    /* display: block; */
 }
